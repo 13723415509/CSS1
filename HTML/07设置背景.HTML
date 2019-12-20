@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+             background-color: lightblue;
+             background-image: url("../image/2016073157003865.jpg"); 
+            /* 图片填充时默认横向纵向都平铺 */
+            /* background-repeat: repeat-y; 设置纵向平铺 */
+            /* background-repeat: repeat-x; 设置横向平铺 */
+            /* background-repeat:no-repeat;设置不平铺 */
+             background-repeat:no-repeat; 
+            /* 固定背景图属性 */
+             background-attachment: fixed; 
+            /* background-position 设置背景图片的位置，有两个值：横向偏移量   纵向偏移量 */            
+             /* background-position: top,center;  */
+             background-position: 50%,50%; 
+            height: 3000px;
+            
+            /* background: url("../image/2016073157003865.jpg") no-repeat 50%,50%/cover fixed; 
+             一般我不这么写，太混乱了,而且属性值顺序不同结果不同*/
+        }
+        .div02{
+            width: 300px;
+            height: 200px;
+            background-color: transparent;
+            border: 2px red solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="div01">
+        <p>第1段文字</p>
+        <p>第2段文字</p>
+        <p>第3段文字</p>
+        <p>第4段文字</p>
+        <p>第5段文字</p>
+        <p>第6段文字</p>
+        <p>第7段文字</p>
+        <p>第8段文字</p>
+        <p>第9段文字</p>
+        <p>第10段文字</p>
+    </div>
+    <div class="div02">
+        测试的div
+    </div>
+</body>
+</html>
+
+<!-- 
+设置背景：
+1：页面
+2.容器（div）
+
+ background-position 设置背景图片的位置，有两个值：横向偏移量   纵向偏移量
+ 1.400px  300px
+ 2.50%   50%
+ 3.left,center,right,top,bottom
+
+ 设置图片占领整个body，需要设置参数background-size
+ 1,background-size:100%
+ 2,background-size:cover
+
+ 设置背景的时候，两种写法
+ background-color:navy;
+ background:navy;
+ background-color只是设置背景色的颜色属性，而background可以设置和背景相关的所有属性。
+ -->

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS基本选择器</title>
+    <style>
+       /*
+       通配符选择器
+        *{
+           border:2px red solid;
+       } 
+       */
+
+       /* 
+       标签选择器
+       div{
+           width:400px;
+           height: 100px;
+           background-color: lightblue;
+       }
+       p{
+           font-size: 18px;
+           color: red;
+       } 
+       */
+
+       /*id选择器*/
+       #p2{
+        font-size: 18px;
+        color: red;
+       }
+       /*类选择器*/
+       .p1
+       {
+           font-style: italic;
+           font-weight: bold;
+           color: yellow;
+       }
+       .class01
+       {
+           font-size: 50px;
+       }
+    </style>
+</head>
+<body>
+    <div>第一个DIV容器</div>
+    <h3>第一个标题</h3>
+    <p class="p1">第一个段落</p>
+
+    <div>第二个DIV容器</div>
+    <h3>第二个标题</h3>
+    <p id="p2">第二个段落</p> 
+    
+    <div class="class01">第三个DIV容器</div>
+    <h3>第三个标题</h3>
+    <p class="p1 class01">第三个段落</p> <!--多个类叠加效果 用空格-->
+</body>
+</html>
+<!--
+    基本选择器
+    1.通配符选择器---*----- 所有的元素
+    2.标签选择器---名称-----  符合相应标签的会响应
+    3.ID选择器---id号----   在选择器中使用#id号选择
+    注意点：id在一个HTML中，不能重复，只能有一个值
+    4.类选择器---类名 ---  在选择器中使用.类名选择
+      注意：1）类选择器使用最广泛
+           2）一个元素可以属于多个类，所以响应的CSS样式是多个类的叠加。
+-->

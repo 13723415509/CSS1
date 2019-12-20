@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <style>
+    body{
+        margin: 0px;
+    }
+    div{
+        width:100px;
+        height:100px;
+        background-color: navy;
+        margin:30px;
+    }
+    div:nth-child(2){
+        position: relative;
+        top:-130px;
+        left:130px;
+    }
+    div:nth-child(3){
+        position: relative;
+        top:-260px;
+        left:260px;
+    }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <img src="../image/02.jpg">
+</body>
+</html>
+<!--
+    解析：元素框偏移某个距离。元素仍保持其未定位前的形状，它原本所占的空间仍保留。
+
+      理解：使用相对定位Relative进行定位时，原本该元素占据的空间位置不变，以“原本该元素”的左上位置为中心点，根据设置的left和top进行位置的偏移。
+
+      备注：设置为相对定位的元素框会偏移某个距离，元素仍然保持其未定位前的形状，它原本所占的空间仍保留。
+-->

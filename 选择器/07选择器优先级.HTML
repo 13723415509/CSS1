@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            color:red !important;
+        }
+        div{
+            color:indigo
+        }
+        .div01
+        {
+            color: yellow;
+        }
+        div[class=div01]
+        {
+            color:black;
+        }
+        body>div:first-child
+        {
+            color: tomato;
+        }
+        #id01{
+            color: turquoise;
+        }
+    </style>
+</head>
+<body>
+    <div class="div01" id="id01" style="color: brown;">
+        Web前端开发之CSS布局
+    </div>
+</body>
+</html>
+<!--
+    选择器优先级：
+    通配符选择器<标签选择器<类选择器<属性选择器<伪类选择器<id选择器<内联样式<!important
+    在属性值后加上！important，可以将这个选择器的这个属性优先级提上最高
+-->

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .div01{
+            width:612px;
+            height:459px;
+            border:navy 10px solid;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        .div02
+        {
+            width:300px;
+            height: 200px;
+            background-color: black;
+            color: chartreuse;
+            font-size: 26px;
+            line-height: 100px;
+            border-top: 5px green solid;
+            border-bottom:20px black groove;
+            border-left: 5px solid red;
+            border-right: 10px solid yellow;
+            padding: 10px 20px 30px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="div01">
+        <img src="../image/01.jpg">
+    </div>
+    <div class="div01">
+            <img src="../image/01.jpg">
+    </div>
+
+    <div class="div02">
+        <img src="../image/02.jpg">
+    </div>
+</body>
+</html>
+<!--
+    盒子模型：
+    容器的：width，height ->内容的宽度和高度
+    padding:内边距
+    border：边框
+    margin:外边距
+
+    盒子模型的值：
+    border:颜色，宽度，线的样式
+    四面：left,right,top,bottom
+    border-style:solid
+
+    border-width:5px;border-width:thin;border-width:medium(默认值);border-width:thick
+    border-width:15px 15px 15px 15px -----上右下左
+ 
+    border-color:red;
+    border-radius;(边框圆角属性)
+
+
+    padding:内边距----四个方向
+    1.padding:10px -------4个方向都是10px
+      等价于：   padding:10px 10px 10px 10px --------顺序上  右  下   左
+    2.padding  20px  40px-----等价于：padding：20px 40px 20px 40px 即前面设置的是上下，后面设置的是左右
+    3.padding  10px 20px 30px----等价于：padding：10px 20px 30px 20px
+
+    margin:外边距----四个方向------- 设置与padding完全一致
+    1. margin: 10px ----等价于四个方向都是10px
+      等价于：   maigin:10px 10px 10px 10px --------顺序上  右  下   左
+    2.margin  20px  40px-----等价于：margin：20px 40px 20px 40px 即前面设置的是上下，后面设置的是左右
+    3.margin  10px 20px 30px----等价于：margin：10px 20px 30px 20px
+    4.margin 40px auto----------上下40px,左右平均
+    5。margin auto------------居中
+
+
+    盒子：
+    width：100px------Content
+    height:100px--------Content
+
+    盒子真正的Width：content+2*padding+2*border+2*margin;
+-->

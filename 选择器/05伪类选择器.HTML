@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .class01{
+        
+            background-color:lightblue;
+            font-size: 22px;
+            width: 100px;
+            height: 50px;
+            margin: auto;
+            text-align: center;
+            line-height: 50px;
+        }
+        .class01:hover/*鼠标放置特效*/
+        {
+            background-color: navy;
+            color:yellow;
+            font-weight:bold;
+        }
+        table>thead>tr{
+            background-color: aliceblue;
+            color: navy;
+            font-size: 18px;
+        }
+        /*第一行数据*/
+        table>tbody>tr:first-child{
+            color: green;
+        }
+        table>tbody>tr:last-child{
+            color: purple;
+        }
+        /*从前往后第三行*/
+        table>tbody>tr:nth-child(3)
+        {
+            color:blue;
+        }
+         /*从后往前第四行*/
+         table>tbody>tr:nth-last-child(4)
+        {
+            color:red;
+        }
+        /*奇数行*/
+        table>tbody>tr:nth-child(even)
+        {
+
+            font-weight: bold;
+        }
+        /*偶数行*/
+        table>tbody>tr:nth-child(odd)
+        {
+            font-style: italic;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="class01">
+        课程大纲
+    </div>
+
+    <table border="1px">
+        <caption>学生信息表</caption>
+        <thead>
+            <tr>
+                <th>学号</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>出生日期</th>
+                <th>电话</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>958882</td>
+                <td>张三</td>
+                <td>男</td>
+                <td>1995-04-27</td>
+                <td>14752342201</td>
+            </tr>
+
+            <tr>
+                <td>958883</td>
+                <td>丽丽</td>
+                <td>女</td>
+                <td>1993-07-28</td>
+                <td>14752152201</td>
+            </tr>
+
+            <tr>
+                <td>958878</td>
+                <td>陈龙</td>
+                <td>男</td>
+                <td>1998-11-21</td>
+                <td>13722152201</td>
+            </tr>
+
+            <tr>
+                <td>958878</td>
+                <td>陈龙</td>
+                <td>男</td>
+                <td>1998-11-21</td>
+                <td>13722152201</td>
+            </tr>
+
+
+            <tr>
+                <td>958883</td>
+                <td>丽丽</td>
+                <td>女</td>
+                <td>1993-07-28</td>
+                <td>14752152201</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html> 
+<!-- 
+    状态伪类：:link      :hover     :active       :visited  
+    结构伪类：:first-child,:last-child,:nth-child(n),:nth-last-child(n),:nth-child(even)   奇数行,:nth-child(odd)  偶数行
+              :nth-child(2) ---表示选择第二个儿子
+-->

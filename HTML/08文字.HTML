@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .div01
+        {
+            width:800px;
+            height: 40px;
+            background-color: lightblue;
+            
+            font-family: "微软雅黑","隶书";/* 属性值从前到后 */
+            color:navy;
+            font-size: 22px;/*字的大小*/
+            font-weight: bold;/*字的粗细 100——900来选，  normal lighter  bold*/
+            font-style: italic;/*字 字斜体*/
+            line-height: 40px;/*字的行高*/
+            text-align: center;
+        }
+        .div02
+        {
+            width:800px;
+            height: 40px;
+            background-color: lightblue;
+            color:navy;
+            text-align: center;
+            font: italic bold 22px/40px "微软雅黑","隶书";/*顺序有关系，不同的属性值顺序会有不同的结果，我不推荐这样写*/
+        }
+    </style>
+</head>
+<body>
+    <div class="div01">
+        Web前端
+    </div>
+    <div class="div02">
+        Web前端
+    </div>
+</body>
+</html>

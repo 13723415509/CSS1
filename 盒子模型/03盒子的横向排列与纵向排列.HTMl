@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px; 
+        }
+        /* 
+        div{
+            width: 316px;
+            height: 328px;
+            float:left;
+        } 
+        */
+        .row{
+            width:980px;
+            height:328px;
+            margin: auto;
+        }
+        .row>div{
+            width: 316px;
+            height: 328px;
+            float:left;
+        } 
+    </style>
+</head>
+<body>
+    <div class="row">
+            <div><img src="../image/03.jpg"></div>
+            <div><img src="../image/03.jpg"></div>
+            <div><img src="../image/03.jpg"></div>
+    </div>
+    <div class="row">
+        <div><img src="../image/03.jpg"></div>
+        <div><img src="../image/03.jpg"></div>
+    </div>
+   
+    
+</body>
+</html>
+<!-- 
+    1、在默认情况下，所有盒子都是纵向排列
+       这种情况下如果div没有指定宽度和高度，默认情况下，div的高度会比图片高度大些。所以会造成图片与图片有间隙
+       解决的方法是设置div的高度与图片高度一致。
+    2、如果设置横向排列，则在div选择器中设置float:left; 
+       往右贴float:right;
+    3、现在需求：上面三个一行，下面两个在另一行。
+ -->

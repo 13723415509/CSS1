@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    .imgg>div{
+        float:left;
+        margin: 10px;
+        
+    } 
+    .imgg::after{
+       /* 1.构建成块元素   2.清除浮动 */
+       content:"";
+       display: block;
+       clear:left;/*清除左浮动*/
+       
+   }
+    </style>
+</head>
+<body>
+    <h2>第一行</h2>
+    <div class="imgg">
+        <div><img class="float1" src="../image/02.jpg"></div>
+        <div><img class="float1" src="../image/02.jpg"></div>
+        <div><img class="float1" src="../image/02.jpg"></div>
+        
+    </div>
+    <h3>第二行</h3>
+    <div class="imgg">
+        <div><img class="float1" src="../image/02.jpg"></div>
+        <div><img class="float1" src="../image/02.jpg"></div>
+        <div><img class="float1" src="../image/02.jpg"></div>
+        <div><img class="float1" src="../image/02.jpg"></div>
+    </div>
+</body>
+</html>
+<!--
+    默认： static ------纵向流
+           float：left ----横向流
+    依次排列
+    如果想重新排列，必须要把之前的float清除,不清楚会保留记忆
+
+    clear:both;/*清除左加右*/
+    clear:left;/*清除左浮动*/
+    clear:right/*清除右浮动*/
+
+    注意：
+    如果在一个容器中实现浮动（float），建议在这个容器内容展示结束后，
+    在容器中直接清除，不要给后续的元素传递浮动的信息
+
+    .imgg::after{
+       /* 1.构建成块元素   2.清除浮动 */
+       content:"";
+       display: block;
+       clear:left;/*清除左浮动*/
+       
+   }
+-->

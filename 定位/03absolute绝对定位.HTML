@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <style>
+    body{
+        margin:0px;
+    }
+    .container{
+        width:1200px;
+        height:316px;/*匹配大图的像素*/
+        margin:100px;
+        position: relative;/*这里的值可以是absolute，就是不能是static，否则定位不了*/
+    }
+    .container>.news{
+        width:200px;
+        height:300px;
+        position: absolute;
+        background-color: #333;
+        bottom: 8px;
+        left:10px;
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="../image/大图.PNG">
+        <div class="news">
+            CSS前端开发
+        </div>
+    </div>
+</body>
+</html>
+<!--
+    absolute:按照父容器的绝对位置定位。
+    left,top,bottom,right
+    千万注意：在做绝对定位的时候，是按父容器进行定位。如果父容器的定位是static类型，继续往上找父容器
+-->

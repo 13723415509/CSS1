@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            margin: auto;
+        }
+        .row{
+            width:1540px;
+            height:240px;
+            margin: auto;
+        }
+        .row>.one{
+            width:300px;
+            height:240px;
+            float: left;
+            margin-right: 10px;
+        }
+        .row>.one:last-child{
+            width:300px;
+            height:240px;
+            float: left;
+            margin-right: 0px;
+        }
+        .row>.one>.two
+        {
+            width:300px;
+            height: 200px;
+        }
+        .row>.one>.three{
+            width:300px;
+            height:40px;
+            font-size: 22px;
+            background-color:gray;
+            text-align: center;
+            color: black;
+            border: solid 2px red;
+            box-sizing:border-box;
+        }
+        .row>.one>.three:hover
+        {
+            background-color: navy;
+            color:yellow;
+            font-weight:bold;
+            margin: auto;
+            font-size: 26px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="one">
+                <div class="two"><img src="../image/02.jpg"></div>
+                <div class="three">
+                    C#程序设计
+                </div>
+        </div>
+        <div class="one">
+                <div class="two"><img src="../image/02.jpg"></div>
+                <div class="three">
+                    JAVA程序设计
+                </div>
+        </div>
+        <div class="one">
+                <div class="two"><img src="../image/02.jpg"></div>
+                <div class="three">
+                        Python程序设计
+                </div>
+        </div>
+        <div class="one">
+                <div class="two"><img src="../image/02.jpg"></div>
+                <div class="three">
+                        C++程序设计
+                </div>
+        </div>
+
+        <div class="one">
+                <div class="two"><img src="../image/02.jpg"></div>
+                <div class="three">
+                        PHP程序设计
+                </div>
+        </div>
+       
+    </div>
+</body>
+</html> 
+
+<!-- 
+盒子：
+width：100px------Content
+height:100px--------Content
+
+盒子真正的Width：content+2*padding+2*border+2*margin; 
+
+ 加上属性box-sizing:border-box;之后，    
+原来的内容的width=2*border+2*padding+content.width(现在的width) 
+原来的内容的height=2*border+2*padding+content.height(现在的height)
+意思是盒子大小(也就是盒子的height与width)没有变，只是将内容的一部分大小给了padding或者border或者margin
+-->

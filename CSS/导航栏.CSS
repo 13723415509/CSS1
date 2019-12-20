@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.topnav{
+    width: 1200px;
+    height:40px;
+    background-color:blue;
+    margin: auto;
+}
+.topnav>ul>li{
+    list-style: none;
+}
+.topnav>ul>li>a{
+    text-decoration:none;
+    display: block;
+    width:120px;
+    height:40px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+}
+.topnav>ul>li>a:hover
+{
+    background-color: white;
+    color: black;
+    font-size:22px;
+    border-right:5px pink solid;
+    border-left: 5px pink solid;
+    box-sizing: border-box;
+}

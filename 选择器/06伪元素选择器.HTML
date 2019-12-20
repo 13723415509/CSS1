@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .div01{
+            width:800px;
+            height:500px;
+            background-color:lightblue;
+            color: navy;
+            margin: auto;
+            text-align: justify;
+            
+        }
+        /**/
+        .div01::first-letter{
+            font-size: 30px;
+            color: red;
+        }
+        .div01::first-line{
+            font-size: 20px;
+            color: green;
+        }
+        .div02>ul>li
+        {
+            list-style-type: none;
+        }
+        .div02>ul>li::before
+        {
+            content: "【";
+            color: green;
+        }
+        .div02>ul>li::after
+        {
+            content: "】";
+            color: green;
+        }
+        .div02>ul>li:hover
+        {
+            font-size: 28px;
+            color: red;
+            font-weight: bold;
+        }
+        .div02>ul>li:hover::before
+        {
+            content: "{";
+            color: red;
+        }
+        .div02>ul>li:hover::after
+        {
+            content: "}";
+            color: red;
+        }
+        .div03>ul>li
+        {
+            list-style-type: none;
+        }
+
+        .div03>ul>li::before
+        {
+            content: url("../image/loupe_32px_1228695_easyicon.net.png");
+        }
+    </style>
+</head>
+<body>
+    <div class="div01">
+        
+        前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web
+        Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发
+        Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发
+        Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发
+        Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发
+        Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发
+        Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发
+        Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发
+        Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发
+        Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发Web前端开发
+    </div>
+
+    <div class="div02">
+        <h3>无序列表</h3>
+        <hr>
+        <h4>中国的一线城市有：</h4>
+        
+        <ul>
+            <li>北京</li>
+            <li>上海</li>
+            <li>广州</li>
+            <li>深圳</li>
+        </ul>
+    </div>
+
+    <div class="div03">
+        <ul>
+            <li>北京</li>
+            <li>上海</li>
+            <li>广州</li>
+            <li>深圳</li>
+        </ul>
+    </div>
+</body>
+</html>
+<!--
+    属性
+    :first-letter 向文本的第一个字母添加特殊样式
+    :first-line 向文本的首行添加特殊样式
+    :before在元素之前添加内容
+    :after在元素之后添加内容
+
+    元素就是HTMNL的标签
+    伪元素：也是标签，不是手工写，系统自动加的
+
+    伪元素选择器最重要的：before和after
+    :before在元素之前添加内容-----前置的准备
+    :after在元素之后添加内容-----后置的清除（float:left---clear）
+-->

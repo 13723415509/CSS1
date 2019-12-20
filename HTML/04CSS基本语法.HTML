@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div 
+        {
+            width:800px;
+            height: 200px;
+            background-color: yellow;
+            color: black;
+            margin: 20px;
+
+
+        }
+        /* 
+        选择器:div，声明:width:800px;，属性:width，属性值:800px
+         */
+
+        #div02{
+            color: green;
+            font-size: 30px;
+        }
+        /* id选择器：#div02 */
+
+        .class01{
+            color: green;
+            font-size: 30px;
+        }
+        /* 类选择器:.class01 */
+    </style>
+</head>
+<body>
+    <div>哈哈哈</div>
+    <div id="div02">嘿嘿嘿</div>
+    <div>呀呀呀</div>
+    <div class="class01">啦啦啦</div>
+    <p class="class01">Python</p>
+</body>
+</html>
+<!--
+    需求:对所有的DIV设定CSS：
+    标签选择器，根据HTML中标签的名称来进行筛选
+
+    需求：对某一个DIV设定CSS：
+    Id选择器，对某一个标签要做特殊设定的时候，可以为这个标签设置一个ID，推荐一个HTML中ID唯一
+
+    需求：对某几个标签设定CSS：
+    类选择器：可以把部分标签设置为同一个类，然后对这一类的标签设定CSS
+-->

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 
+        a{
+            color: gray;
+        }
+        a[target]
+        {
+            color: red;
+        }
+         */
+        /* a[target=abc]
+        {
+          color:black
+        }
+        a[href *= "cn"]
+        {
+            color: green;
+        } */
+        [target=_blank]
+        {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+        <a href="https://www.sina.com.cn/" target="_blank">新浪网</a>
+        <a href="https://www.sohu.com/" target="_blank">搜狐网</a>
+        <a href="https://www.qq.com/" target="_blank">腾讯网</a>
+        <a href="https://www.ifeng.com/" target="_blank">凤凰网</a>
+        <a href="https://www.taobao.com/" target="_blank">淘宝网</a>
+        <a href="https://www.huawei.com" target="abc">华为网</a>
+        <a href="">测试</a>
+</body>
+</html>
+<!-- 
+    [target] 选择带有target属性所有元素
+    [target=_blank] 选择target="_blank"
+    a[src^="https"]选择src属性以“https”开头的每个<a>元素
+    a[src$=".pdf"]选择src属性以“.pdf”结尾的每个<a>元素
+    a[src*="abc"]选择src属性中包含“abc”子串的每一个<a>元素
+ -->

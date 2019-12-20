@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        ul,li{
+            padding: 0px;
+            margin: 0px;
+        }
+
+    .div01
+        {
+            width:1200px;
+            height: 40px;
+            background-color:navy;
+            margin: 100px;
+       
+        }
+    .div01>ul>li{
+        list-style-type: none;
+        display:block;
+        background-color:yellow;
+        width:150px;
+        height:40px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 40px;
+        color: burlywood;
+        float: left;
+       
+    }
+    .div01>ul>li:hover
+    {
+        background-color: lightblue;
+        color:red;
+    }
+    </style>
+</head>
+<body>
+ 
+
+   <div class="div01">
+        <ul>
+            <li>首页</li>
+            <li>课程大纲</li>
+            <li>课程视频</li>
+            <li>讲师介绍</li>
+        </ul>
+   </div>
+</body>
+</html>
+<!--
+    None:相应元素被隐藏
+    Block：以块的方式显示元素
+    inline:在一行显示元素
+    inline-block:在一行以块状显示元素
+  
+
+
+display:
+none:不显示
+block:块状显示，如果想在一行，需要设置float:left
+inline:不是块状，针对字，自动放置一行
+inline-block:inline+block,自动放置一行的block
+-->

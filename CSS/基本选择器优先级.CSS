@@ -1,0 +1,11 @@
+.p1
+{
+    color: green;
+}
+.class01
+{
+   color: hotpink;
+}
+/*CSS优先级
+  如果HTML在响应CSS文件时，CSS文件从上往下逐行应用，处于下面的就把上面的覆盖了，所以下面的优先级高
+*/

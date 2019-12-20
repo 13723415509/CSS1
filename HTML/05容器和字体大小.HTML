@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{
+            width:1200px;
+            height:200px;
+            background-color: navy;
+            font-size: 40px;
+           
+        }
+        div>div
+        {
+            float: left;
+            /* 所有子div横向排列 */
+        }
+        div>.one
+        {
+            width: 50%;
+            height: 90%;
+            background-color: hotpink;
+            font-size: 0.8em;
+        }
+        div>.two
+        {
+            width:30%;
+            height:80%;
+            background-color: yellow;
+            font-size:0.5em;
+        }
+        div>.three
+        {
+            width:10%;
+            height:70%;
+            background-color: red;
+            font-size: 1.2em;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="one">div01</div>
+
+        <div class="two">div02</div>
+        <div class="three">div03</div>     
+    </div>
+  
+</body>
+</html>
+<!-- div
+绝对值：px;相对值%
+字体
+绝对值px 相对值em，rem(根) -->
